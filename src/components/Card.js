@@ -12,7 +12,7 @@ function Card({card, userId, onCardClick}) {
     <>
       <div className="card-grid__item-image-container">
         <img className="card-grid__item-image"
-             style={{backgroundImage: `url(${link})`}}
+             src={link}
              alt={name}
              onClick={handleClick}/>
       </div>

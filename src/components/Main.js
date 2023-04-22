@@ -31,7 +31,7 @@ function Main({onEditProfile, onAddPlace, onEditAvatar, onCardClick}) {
       <main className="content">
         <section className="profile">
           <div className="profile__avatar-container">
-            <img className="profile__avatar" alt="Ваш аватар" style={{backgroundImage: `url(${userAvatar})`}}/>
+            <img className="profile__avatar" alt="Ваш аватар" src={userAvatar}/>
             <button className="profile__avatar-edit-hint" type="button"
                     aria-label="Изменить аватар пользователя"
                     onClick={onEditAvatar}/>
