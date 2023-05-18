@@ -12,7 +12,7 @@ function AddPlacePopup({isOpen, isLoading, onClose, onAddPlace}) {
       name: '',
       link: '',
     });
-  }, [isOpen]);
+  }, [isOpen, setValues]);
 
   function handleSubmit(e) {
     e.preventDefault();

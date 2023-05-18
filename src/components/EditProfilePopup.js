@@ -16,7 +16,7 @@ function EditProfilePopup({isOpen, isLoading, onClose, onUpdateUser}) {
         about: currentUser.about,
       });
     }
-  }, [currentUser, isOpen]);
+  }, [currentUser, isOpen, setValues]);
 
   function handleSubmit(e) {
     e.preventDefault();
