@@ -1,6 +1,5 @@
 import {useContext} from 'react';
 import Card from './Card';
-import PopupWithForm from "./PopupWithForm";
 import {CurrentUserContext} from "../contexts/CurrentUserContext";
 
 function Main({onEditProfile, onAddPlace, onEditAvatar, cards, onCardClick, onCardLike, onCardDelete}) {
@@ -40,8 +39,6 @@ function Main({onEditProfile, onAddPlace, onEditAvatar, cards, onCardClick, onCa
           </ul>
         </section>
       </main>
-
-      <PopupWithForm name='confirmation' title='Вы уверены?'/>
     </>
   );
 }
